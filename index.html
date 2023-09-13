@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Fruit Burst</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- page-font -->
@@ -11,8 +12,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
-  .w-font{
-    font-family: 'Lato';
+  .m-font{
+    font-family: 'Lato', sans-serif;
+  }
+  .f-color{
+    color: rgba(18, 18, 18, 0.60);
   }
 
 
@@ -34,15 +38,16 @@
   }
 </script>
 </head>
-<body style="font-family: 'Lato'; margin: 0px;padding: 0px;">
+<body class="m-font">
   <header class="max-w-screen-xl mx-auto py-12">
+    <!-- navigation -->
     <nav class="px-12 bg-red-500 py-7 rounded-full">
       <div class="flex justify-between">
         <ul class="flex items-center text-white text-lg gap-7 ">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Shop</li>
-          <li>All Fruits</li>
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Shop</a>
+          <a href="">All Fruits</a>
         </ul>
         <div  class="flex items-center gap-4">
           <img src="images/logo.png" alt="">
@@ -56,6 +61,7 @@
         </div>
       </div>
     </nav>
+    <!-- banner section starts here -->
     <section class="max-w-screen-xl mx-auto mt-14 relative">
       <div class="carousel w-full">
         
@@ -96,7 +102,7 @@
           </div>
         </div> 
         <div id="slide4" class="carousel-item relative w-full">
-          <img src="/images/banner4.png" class="w-full" />
+          <img src="images/banner4.png" class="w-full" />
           <div class="absolute transform -translate-y-1/2 left-5 right-5 top-1/3 text-center">
             <h1 class="text-white text-7xl pb-6 font-extrabold w-font">Exotic tastes at your <br>doorstep</h1>
             <p class="text-white text-xl pb-8">We supply highly quality organic products</p>
@@ -108,6 +114,7 @@
           </div>
           
         </div>
+         <!-- floating banner section starts -->
         <div class="absolute -bottom-[134px] left-[116px] flex justify-around px-20 gap-12 text-center bg-white shadow-md rounded-lg max-w-6xl">
           <div class=" py-14">
             <img src="images/fruit1.png" alt="">
@@ -129,29 +136,19 @@
             <img src="images/fruit5.png" alt="">
             <p class="pt-4 text-xl text-[#3f3f3f]" >Pomegranate</p>
           </div>
-          
-          
-          
         </div>
-      </div>
-      
-
-
-     
-
+      </div>  
     </section>
-    
-      
-    
-
   </header>
+
+  <!-- main section starts here -->
   <main>
-    
+    <!--  deal  countdown section -->
     <section class="max-w-screen-xl mx-auto mt-60 ">
       <div class="flex">
         <div class="flex-1">
           <h1 class="text-5xl font-extrabold">Deal of the day</h1>
-          <p class="text-base mt-6 text-[#6d6d6d] leading-[1.625rem]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <p class="text-base mt-6 f-color leading-[1.625rem]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
   
         </div>
 
@@ -161,46 +158,41 @@
               <span class="countdown font-mono text-5xl font-extrabold">
                 <span  style="--value:15;"></span>
               </span>
-              <span class="text-[#6d6d6d]">Days</span>
+              <span class="f-color">Days</span>
             </div> 
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl font-extrabold">
                 <span style="--value:10;"></span>
               </span>
-              <span class="text-[#6d6d6d]">Hours</span>
+              <span class="f-color">Hours</span>
             </div> 
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl font-extrabold">
                 <span style="--value:24;"></span>
               </span>
-              <span class="text-[#6d6d6d]">Minutes</span>
+              <span class="f-color">Minutes</span>
             </div> 
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl font-extrabold">
                 <span style="--value:49;"></span>
               </span>
-              <span class="text-[#6d6d6d]">Seconds</span>
+              <span class="f-color">Seconds</span>
             </div>
           </div>
         </div>
       <div>
 
-        
-
-     
-
-      
-       
-</section>
-
+  </section>
+      <!--  fruit cards section -->
+      <!-- Apple Card -->
     <section class="max-w-screen-xl mx-auto my-12">
       <div class="grid grid-cols-4 gap-6 ">
         <div class="text-center border-[1px] px-16 rounded-lg  ">
           <div>
-            <img class=" mx-auto py-12 " src="/images/fruit6.png" alt="">
+            <img class=" mx-auto py-12 " src="images/fruit6.png" alt="">
             <h1 class="text-2xl font-bold pb-6 whitespace-nowrap">12.90$ - 18.85$	</h1>
             <hr>
-            <p class="py-6 text-gray-500 font-medium">Apples</p>
+            <p class="py-6 f-color font-medium">Apples</p>
           </div>
           <div class="rating">
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
@@ -209,18 +201,16 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
           </div>
-
-
-          <!-- Open the modal using ID.showModal() method -->
+          <!-- modal-1 -->
           <button class="mt-8 mb-12 text-lg text-red-500" onclick="my_modal_1.showModal()">Details</button>
           <dialog id="my_modal_1" class="modal">
             <div class="modal-box">
               
                 <div class=" flex flex-col justify-center items-center ">
-                  <img class="pt-7 pb-5 w-2/5 "  src="/images/fruit6.png" alt="">
+                  <img class="pt-7 pb-5 w-2/5 "  src="images/fruit6.png" alt="">
                   <h1 class="text-4xl font-extrabold pb-5">Apples</h1>
                   
-                  <p class=" text-gray-500 font-medium ">Professional employees are there for you to pick the most <br>  amazing and fresh fruits.</p>
+                  <p class=" f-color font-medium ">Professional employees are there for you to pick the most <br>  amazing and fresh fruits.</p>
                 </div>
                 <div class="rating mt-5 ">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
@@ -231,29 +221,20 @@
                 </div>
               <div class="modal-action flex justify-center mb-7">
                 <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  
-                    
-                      <button class=" text-lg font-extrabold text-red-500 bg-white px-5 py-3 rounded-lg border-[1px] border-red-500 ">Close</button> 
+                  <button class=" text-lg font-extrabold text-red-500 bg-white px-5 py-3 rounded-lg border-[1px] border-red-500 ">Close</button> 
                   <button class=" ml-5 text-lg font-extrabold px-4 py-3  bg-red-500 rounded-lg text-white border-[1px] border-red-500 "> Buy Now</button>
-                    
-                  
                 </form>
               </div>
             </div>
           </dialog>
-          
-
-          
-
-          
-        </div>
+      </div>
+      <!-- Orange card -->
         <div class="text-center border-[1px] px-16 rounded-lg  ">
           <div>
-            <img class=" mx-auto py-12 " src="/images/fruit7.png" alt="">
+            <img class=" mx-auto py-12 " src="images/fruit7.png" alt="">
             <h1 class="text-2xl font-bold pb-6 whitespace-nowrap">12.90$ - 18.85$	</h1>
             <hr>
-            <p class="py-6 text-gray-500 font-medium">Orange</p>
+            <p class="py-6 f-color font-medium">Orange</p>
           </div>
           <div class="rating">
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
@@ -262,16 +243,16 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
           </div>
-          
+          <!-- modal 2 -->
           <button class="mt-8 mb-12 text-lg text-red-500" onclick="my_modal_2.showModal()">Details</button>
           <dialog id="my_modal_2" class="modal">
             <div class="modal-box">
               
                 <div class=" flex flex-col justify-center items-center ">
-                  <img class="pt-7 pb-5 w-2/5"  src="/images/fruit7.png" alt="">
+                  <img class="pt-7 pb-5 w-2/5"  src="images/fruit7.png" alt="">
                   <h1 class="text-4xl font-extrabold pb-5">Apples</h1>
                   
-                  <p class=" text-gray-500 font-medium ">Professional employees are there for you to pick the most <br>  amazing and fresh fruits.</p>
+                  <p class=" f-color font-medium ">Professional employees are there for you to pick the most <br>  amazing and fresh fruits.</p>
                 </div>
                 <div class="rating mt-5 ">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
@@ -282,24 +263,21 @@
                 </div>
               <div class="modal-action flex justify-center mb-7">
                 <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  
-                    
-                      <button class=" text-lg font-extrabold text-red-500 bg-white px-5 py-3 rounded-lg border-[1px] border-red-500 ">Close</button> 
-                  <button class=" ml-5 text-lg font-extrabold px-4 py-3  bg-red-500 rounded-lg text-white border-[1px] border-red-500 "> Buy Now</button>
-                    
+                  <button class=" text-lg font-extrabold text-red-500 bg-white px-5 py-3 rounded-lg border-[1px] border-red-500 ">Close</button> 
+                  <button class=" ml-5 text-lg font-extrabold px-4 py-3  bg-red-500 rounded-lg text-white border-[1px] border-red-500 "> Buy Now</button> 
                   
                 </form>
               </div>
             </div>
           </dialog>
         </div>
+        <!-- Red Dragon Card -->
         <div class="text-center border-[1px] px-16 rounded-lg  ">
           <div>
-            <img class=" mx-auto py-12 " src="/images/fruit8.png" alt="">
+            <img class=" mx-auto py-12 " src="images/fruit8.png" alt="">
             <h1 class="text-2xl font-bold pb-6 whitespace-nowrap">12.90$ - 18.85$	</h1>
             <hr>
-            <p class="py-6 text-gray-500 font-medium">Red Dragon</p>
+            <p class="py-6 f-color font-medium">Red Dragon</p>
           </div>
           <div class="rating">
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
@@ -308,16 +286,16 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
           </div>
-
+            <!-- modal 3 -->
           <button class="mt-8 mb-12 text-lg text-red-500" onclick="my_modal_3.showModal()">Details</button>
           <dialog id="my_modal_3" class="modal">
             <div class="modal-box">
               
                 <div class=" flex flex-col justify-center items-center ">
-                  <img class="pt-7 pb-5 w-2/5"  src="/images/fruit8.png" alt="">
+                  <img class="pt-7 pb-5 w-2/5"  src="images/fruit8.png" alt="">
                   <h1 class="text-4xl font-extrabold pb-5">Apples</h1>
                   
-                  <p class=" text-gray-500 font-medium ">Professional employees are there for you to pick the most <br>  amazing and fresh fruits.</p>
+                  <p class=" f-color font-medium ">Professional employees are there for you to pick the most <br>  amazing and fresh fruits.</p>
                 </div>
                 <div class="rating mt-5 ">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
@@ -328,7 +306,7 @@
                 </div>
               <div class="modal-action flex justify-center mb-7">
                 <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
+                  
                   <button class=" text-lg font-extrabold text-red-500 bg-white px-5 py-3 rounded-lg border-[1px] border-red-500 ">Close</button> 
                   <button class=" ml-5 text-lg font-extrabold px-4 py-3  bg-red-500 rounded-lg text-white border-[1px] border-red-500 "> Buy Now</button>
                 </form>
@@ -337,12 +315,13 @@
           </dialog> 
                  
         </div>
+        <!-- banana card -->
         <div class="text-center border-[1px] px-16 rounded-lg  ">
           <div>
-            <img class=" mx-auto py-12 " src="/images/fruit9.png" alt="">
+            <img class=" mx-auto py-12 " src="images/fruit9.png" alt="">
             <h1 class="text-2xl font-bold pb-6 whitespace-nowrap" >12.90$ - 18.85$	</h1>
             <hr>
-            <p class="py-6 text-gray-500 font-medium ">Banana</p>
+            <p class="py-6 f-color font-medium ">Banana</p>
           </div>
           <div class="rating">
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
@@ -351,16 +330,16 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
           </div>
-
+          <!-- modal 4 -->
           <button class="mt-8 mb-12 text-lg text-red-500" onclick="my_modal_4.showModal()">Details</button>
           <dialog id="my_modal_4" class="modal">
             <div class="modal-box">
               
                 <div class=" flex flex-col justify-center items-center ">
-                  <img class="pt-7 pb-5 w-2/5"  src="/images/fruit9.png" alt="">
+                  <img class="pt-7 pb-5 w-2/5"  src="images/fruit9.png" alt="">
                   <h1 class="text-4xl font-extrabold pb-5">Apples</h1>
                   
-                  <p class=" text-gray-500 font-medium ">Professional employees are there for you to pick the most <br>  amazing and fresh fruits.</p>
+                  <p class=" f-color font-medium ">Professional employees are there for you to pick the most <br>  amazing and fresh fruits.</p>
                 </div>
                 <div class="rating mt-5 ">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
@@ -371,10 +350,7 @@
                 </div>
               <div class="modal-action flex justify-center mb-7">
                 <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  
-                    
-                  <button class=" text-lg font-extrabold text-red-500 bg-white px-5 py-3 rounded-lg border-[1px] border-red-500 ">Close</button> 
+                 <button class=" text-lg font-extrabold text-red-500 bg-white px-5 py-3 rounded-lg border-[1px] border-red-500 ">Close</button> 
                   <button class=" ml-5 text-lg font-extrabold px-4 py-3  bg-red-500 rounded-lg text-white border-[1px] border-red-500 "> Buy Now</button>
                 </form>
               </div>
@@ -382,24 +358,22 @@
           </dialog>   
         </div>
       </div>          
-             
-          
-       
-
       <div class="flex justify-center mt-16 mb-36">
         <button class="px-7 py-5 bg-red-500 rounded-lg text-white text-xl w-font font-extrabold">Shop Now</button>
        
-      </div>
+      </div>       
 </section>
-<section>
-  <div class="hero min-h-[43.125rem]" style="background-image: url('./images/banner1.png');">
-    <div class="hero-overlay "></div>
+ <!-- Meat the Team section -->
+<section class=" max-w-screen-xl mx-auto">
+  <div class="hero min-h-[43.125rem] rounded-lg " style="background-image: url('./images/banner1.png');">
+    <div class="hero-overlay rounded-lg"></div>
     <div class="hero-content text-center text-neutral-content flex flex-col">
       <div>
         <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
         <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old.</p>
         
       </div>
+    
       <div class="flex gap-32">
         <div>
           <img src="images/member1.png" alt="">
@@ -448,11 +422,11 @@
 
 </section>
 
-
+<!-- Why us section -->
 <section class="max-w-screen-xl mx-auto my-36">
   <div class="text-center ">
     <h1 class="text-5xl font-extrabold mb-6">Why Choose Us</h1>
-    <p class="text-[#6d6d6d] mb-12 ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+    <p class="f-color mb-12 ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
   </div>
 
   <div class="grid grid-cols-3 gap-12">
@@ -468,7 +442,7 @@
            </div>
            
          </div>
-        <p class="text-[#6d6d6d] pl-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
+        <p class="f-color pl-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
        </div>
       
        
@@ -485,7 +459,7 @@
              </div>
              
            </div>
-          <p class="text-[#6d6d6d] pl-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
+          <p class="f-color pl-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
          </div>
         
          
@@ -504,7 +478,7 @@
              </div>
              
            </div>
-          <p class="text-[#6d6d6d] pl-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
+          <p class="f-color pl-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
          </div>
         
          
@@ -526,7 +500,7 @@
              </div>
              <img class=" bg-gray-200 p-[18px] rounded-full" src="icons/fruit 1.png" alt="">
            </div>
-          <p class="text-[#6d6d6d] pr-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
+          <p class="f-color pr-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
          </div>
         
          
@@ -542,7 +516,7 @@
              </div>
              <img class=" bg-gray-200 p-[18px] rounded-full" src="icons/ice-cream 1.png" alt="">
            </div>
-          <p class="text-[#6d6d6d] pr-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
+          <p class="f-color pr-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
          </div>
         
          
@@ -551,34 +525,29 @@
       </div>
       <div>
         <div class="text-right ">
-          
           <div>
-           <div class="flex justify-end items-center gap-6">
+            <div class="flex justify-end items-center gap-6">
              <div>
               <h1 class="text-2xl font-extrabold text-[#121212]">The Benefits Only</h1>
               <hr class="mt-4 mb-5 w-[100px] text-end ml-auto border-black ">
              </div>
              <img class=" bg-gray-200 p-[18px] rounded-full" src="icons/like 1.png" alt="">
-           </div>
-          <p class="text-[#6d6d6d] pr-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
-         </div>
-        
-         
+            </div>
+            <p class="f-color pr-[84px]">Professional employees are there for you to pick the   most amazing and fresh fruits.</p>
+          </div>
         </div>
-
       </div>
-
     </div>
-
   </div>
 
 
   
 
-  </div>
+</div>
 
 </section>
 </main>
+<!-- Footer section -->
   <footer>
     
     <footer class="footer footer-center pt-[9.12rem] pb-[8.75rem] bg-black text-base-content rounded">
@@ -588,7 +557,7 @@
       </div>
       
       <nav class="grid grid-flow-col gap-16 text-lg text-white">
-        <a class="link link-hover">Home</a> 
+        <a class="link link-hover">Home</a>
         <a class="link link-hover">About Us</a> 
         <a class="link link-hover">Shop</a> 
         <a class="link link-hover">All Fruits</a>
@@ -596,13 +565,13 @@
         <a class="link link-hover">My Account</a>
       </nav> 
       <nav>
-        <ul class="grid grid-flow-col gap-10">
-          <li><a href="https://twitter.com/?lang=en" target="_parent"><img src="icons/twitter 1 (1).png" alt=""></a> </li>
-          <a><img src="icons/facebook 1 (1).png" alt=""></a> 
-          <a><img src="icons/Group 49 (1).png" alt=""></a> 
-          <a><img src="icons/instagram 1 (1).png" alt=""></a> 
-          <a><img src="icons/linkedin 1 (2).png" alt=""></a> 
-          <a><img src="icons/apple 1 (1).png" alt=""></a> 
+        <ul class="grid grid-flow-col gap-10 ">
+          <a href="https://twitter.com/?lang=en" target="_parent"><img src="icons/twitter 1 (1).png" alt=""></a>
+          <a href="https://www.facebook.com/" target="_parent"><img src="icons/facebook 1 (1).png" alt=""></a>
+          <a href="https://www.youtube.com/" target="_parent"><img src="icons/Group 49 (1).png" alt=""></a> 
+          <a href="https://www.instagram.com/" target="_parent"><img src="icons/instagram 1 (1).png" alt=""></a>
+          <li><a href="https://ie.linkedin.com/" target="_parent"><img src="icons/linkedin 1 (2).png" alt=""></a> </li>
+          <a href="https://www.apple.com/" target="_parent"><img src="icons/apple 1 (1).png" alt=""></a>
           
         </ul>
       </nav> 
